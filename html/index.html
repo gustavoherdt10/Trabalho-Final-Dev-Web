@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Projeto final</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="imagens.html" class="nav-link">Imagens</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="videos.html" class="nav-link">Videos</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="imagens.html" class="nav-link">Imagens</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="videos.html" class="nav-link">Videos</a></li>
+            </ul>
+
+            <div class="login-button">
+
+            </div>
+        </div>
+    </header>
+    
+    
+    <div class="slider">
+        <div class="slides">
+            <!--Radio buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            
+            <!--Slides img-->
+            <div class="slide first">
+                <img src="../img/uber.png" alt="Imagem1">
+            </div>
+            <div class="slide" id="robinhood">
+                <img src="../img/robinhoodcorreto.png" alt="Imagem2">
+            </div>
+            <div class="slide">
+                <img src="../img/lyftcerto.png" alt="Imagem3">
+            </div>
+            <div class="slide">
+                <img src="../img/bitpandacerto.png" alt="Imagem4">
+            </div>
+            <!--Nvegação auto-->
+            <div class="navigation">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+    </div>
+    
+    <div class="primary-item">
+        <div class="text">
+            <h1>Conheça a linguagem Swift</h1>
+            <p>Swift é uma linguagem de programação desenvolvida pela Apple para desenvolvimento no iOS, macOS, watchOS,
+                tvOS, Windows e Linux. Swift foi desenvolvida para manter compatibilidade com a API Cocoa e com código
+                existente em Objective-C.
+                O compilador usa a infraestrutura do LLVM e é distribuído junto do Xcode desde a versão 6.[4].
+                Foi anunciada na WWDC em 2014, conferência anual da Apple.[5] Inicialmente um software proprietário, a
+                partir da versão 2.2 (dezembro de 2015) foi distribuída sob a licença Apache 2.0.[6][7]
+                Em março de 2017, Swift ficou entre as dez linguagens mais populares, de acordo com o Índice Tiobe,[8] e
+                atualmente está entre as 20 mais populares.[9] De acordo com uma pesquisa conduzida pela RedMonk,
+                está entre as dez linguagens mais populares.[10]</p>
+            <p>O desenvolvimento do Swift teve início em julho de 2010 por Chris Lattner, com a eventual colaboração de
+                muitos outros programadores da Apple. O Swift é inspirado em linguagens como Objective-C, Rust, Haskell,
+                Ruby, Python, C#, CLU, entre outras.[11] Uma versão beta da linguagem foi disponibilizada a
+                desenvolvedores Apple durante a WWDC de 2014 .
+                A versão 1.0 foi lançada em 9 de setembro de 2014, com a versão Gold Master do Xcode 6.0 para iOS.[12] A
+                versão 1.1 foi lançada em 22 de outubro de 2014, com o lançamento do Xcode 6.1.[13] Swift 1.2 foi
+                lançado em 8 de abril de 2015, com o lançamento do Xcode 6.3.[14] Swift 2.0 teve seu anúncio durante a
+                WWDC de 2015, e foi disponibilizado para a publicação de aplicativos na App Store em 21 de setembro de
+                2015.[15]
+                Swift 3.0 foi lançado em 13 de setembro de 2016.[16] Swift 4.0 foi lançado em 19 de setembro de
+                2017.[17] Swift 4.1 foi lançado em 29 de março de 2018.[18] Swift 4.2 foi lançado em 17 de setembro de
+                2018.[19]
+                Swift ganhou primeiro lugar na categoria Linguagem de Programação Mais Amada em uma sondagem de
+                desenvolvedores do Stack Overflow em 2015[20] e segundo lugar em 2016.[21]</p>
+        </div>
+        
+        <div class="img-float">
+            <img src="../img/overview-hero@2x.png" alt="notebook e celular">
+        </div>
+    
+    </div>
+
+    <footer class="footer">
+            <address class="address">
+                Autores: Gustavo Herdt e Heitor Berischmeier <br>
+                E-mail: gustavo.herdt@unidavi.edu.br e heitor.berischmeier@unidaviedu.br
+            </address>
+    </footer>
+    
+    <script src="../js/scripts.js"></script>
+</body>
+
+
+</html>

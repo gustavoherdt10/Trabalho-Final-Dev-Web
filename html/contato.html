@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Projeto final</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="imagens.html" class="nav-link">Imagens</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="videos.html" class="nav-link">Videos</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="imagens.html" class="nav-link">Imagens</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="videos.html" class="nav-link">Videos</a></li>
+            </ul>
+
+            <div class="login-button">
+
+            </div>
+        </div>
+    </header>
+
+    <!--Formulário-->
+    <div class="texts">
+        <h1>Formulário de Contato</h1>
+        <p>Caso possua vontade de saber mais sobre a lingaguem Swift, preencha o formulário de contato que estamos disponíbilizando aqui abaixo!</p>
+    </div>
+
+    <div class="area">
+        <form id="formulario" autocomplete="off">
+            <fieldset>
+                <legend>Formulário</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" required="required" name="nome_pessoa" placeholder="Digite seu nome" id="nome" />
+                <label for="cpf">CPF:</label>
+                <input type="text" required="required" name="cpf_pessoa" placeholder="Informe seu CPF" id="cpf" /> 
+                
+                <br>
+                
+                <label for="rua">Rua:</label>
+                <input type="text" required="required" name="rua_endereço" placeholder="Rua" id="rua" />
+                <label for="numero">Número:</label>
+                <input type="text" required="required" name="numero_endereço" placeholder="Número" id="numero" />
+                <label for="bairro">Bairro:</label>
+                <input type="text" required="required" name="bairro_endereço" placeholder="Bairro" id="bairro" /> 
+                
+                <br>
+                
+                <label for="cep">CEP:</label>
+                <input type="text" required="required" name="cep_endereço" placeholder="CEP" id="cep" />
+                <label for="cidade">Cidade:</label>
+                <input type="text" required="required" name="cidade_endereço" placeholder="Cidade" id="cidade" />
+                <label for="estado">Estado:</label>
+                <input type="text" required="required" name="estado_endereço" placeholder="Estado" id="estado" /> 
+                
+                <br>
+                
+                <label>Sexo:
+                    <select name="sexo">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="ND">Não Definido</option>
+                    </select>
+                </label> 
+                
+                <br>
+                
+                <label for="cel">Celular:</label>
+                <input type="tel" required="required" name="celular" placeholder="Informe um número de celular" id="cel" />
+                <label for="tel">Telefone:</label>
+                <input type="tel" required="required" name="celular" placeholder="Informe um número de Telefone" id="tel" />
+                <label for="email">E-mail:</label>
+                <input type="text" required name="e-mail" placeholder="Informe um endereço de e-mail" id="email"> <br>
+                
+                <br>
+                
+                <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8"></textarea><br>
+                
+                <br>
+                
+                <label for="login">Login</label>
+                <input type="text" name="login" placeholder="Crie um nome de usuário" id="login">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" placeholder="Crie uma senha" id="senha">
+                <br>
+                <input type="reset" value="Redefinir">
+                <input type="submit" value="Enviar" />
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="conteudo-img">
+        <img src="../img/ipad-e-iphone.png" alt="iPad e iPhone">               
+    </div>
+
+    <footer class="footer">
+        <address class="address">
+            Autores: Gustavo Herdt e Heitor Berischmeier <br>
+            E-mail: gustavo.herdt@unidavi.edu.br e heitor.berischmeier@unidaviedu.br
+        </address>
+</footer>
+
+    <script src="../js/scripts.js"></script>
+</body>    
